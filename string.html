@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <h2>string methods</h2>
+        <p><h3>1.string LENGTH is:</h3></p>
+        <p id="ex1"></p>
+        <p><h3>2.string SLICE is:</h3></p>
+        <p id="ex2"></p>
+        <p><h3>3.string UPPERCASE is:</h3></p>
+        <p id="ex3"></p>
+        <p><h3>4.string LOWERCASE is:</h3></p>
+        <P id="ex4"></P>
+        <p><h3>5.substring is:</h3></p>
+        <p id="ex5"></p>
+        <p><h3>6.string CONCAT is:</h3></p>
+        <p id="ex6"></p>
+        <h2>ARRAY METHODS</h2>
+        <p><h3>1.array to String is:</h3></p>
+        <P id="demo1"></P>
+        <p><h3>2.array join</h3></p>
+        <p id="demo2"></p>
+        <p><h3>array pop </h3></p>
+        <p id="demo3"></p>
+        <p id="demo"></p>
+        <p ><h3>array push</h3></p>
+        <p id="demo4"></p>
+        <p id="dmo"></p>
+        <p><h3>array shift</h3></p>
+        <p id="dmo5"></p>
+        <p id="dmow"></p>
+        <script>
+            let text="appleorangebanana";
+            document.getElementById("ex1").innerHTML = text.length;
+        "<br>"
+            let a="apple,orange,banana";
+            document.getElementById("ex2").innerHTML = a.slice(1,7);
+        "<br>"
+            let b="appleorangebanana";
+            document.getElementById("ex3").innerHTML = b.toUpperCase();
+        "<br>"
+            let c="appleorangebanana";
+            document.getElementById("ex4").innerHTML = c.toLowerCase();
+        "<br>"
+            let e="appleorangebanana";
+            document.getElementById("ex5").innerHTML = e.substring(7);
+        "<br>"
+            let f="welcome ";
+            let g="how are you"
+            document.getElementById("ex6").innerHTML = f.concat("",g);
+            "<br> <br>"
+            const t1= ["stawberry", "Orange", "Apple", "Mango"];
+            document.getElementById("demo1").innerHTML = t1.toString();
+            "<br>"
+            const t2= ["stawberry", "Orange", "Apple", "Mango"];
+            document.getElementById("demo2").innerHTML = t2.join("*");
+            "<br>"
+            const t3= ["stawberry", "Orange", "Apple"];
+            document.getElementById("demo3").innerHTML = t3;
+            t3.pop();
+            document.getElementById("demo").innerHTML=t3;
+            "<br>"
+            const t4= ["stawberry", "Orange", "Apple", "Mango"];
+            document.getElementById("demo4").innerHTML = t4;
+            t4.push("banana");
+            document.getElementById("dmo").innerHTML=t4;
+            const t5= ["stawberry", "Orange", "Apple", "Mango"];
+            document.getElementById("dmo5").innerHTML = t4;
+            t4.shift();
+            document.getElementById("dmow").innerHTML=t4;
+        </script>
+    </body>
+</html>

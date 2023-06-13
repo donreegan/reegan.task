@@ -1,0 +1,31 @@
+<html>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(40, 243, 233),rgb(236, 33, 169));
+            background-repeat: no-repeat;
+        }
+    </style>
+    <BODY>
+        <h3>FOR LOOP</h3>
+        <p id="test1"></p>
+        <H3>WHILE LOOP</H3>
+        <P id="TEST2"></P>
+        <script>
+            let i=0;
+            let t1=[1,2,3,4,5,6,7,8,9,10,11]
+            let text="";
+            for (let i=0;i<10;i++){
+                text +="the number is "+ t1[i]+"<br>"
+            }
+            document.getElementById("test1").innerHTML=text;
+            "<br>"
+            let t2=[1,2,3,4,5,6,7,8,9,10,11]
+            let text1="";
+            while (i<7){
+                text1+="the number is "+t2[i]+"<br>";+
+                i++;
+            }
+            document.getElementById("TEST2").innerHTML=text1;
+        </script>
+    </BODY>
+</html>

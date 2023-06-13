@@ -1,0 +1,73 @@
+<html>
+    <body>
+        <h3>HIGHEST element is:</h3>
+        <span id="test1"></span>
+        <h3>lenghth</h3>
+        <p id="test2"></p>
+        <p><h3>array pop </h3></p>
+        <p id="test3"></p>
+        <p id="demo"></p>
+        <p ><h3>array push</h3></p>
+        <p id="test4"></p>
+        <p id="dmow"></p>
+        <p ><h3>array unshift</h3></p>
+        <p id="test5"></p>
+        <p id="unshift"></p>
+        <p ><h3>array shift</h3></p>
+        <p id="test6"></p>
+        <p id="shift"></p>
+        <p ><h3>array indexOf</h3></p>
+        <p id="test7"></p>
+        <p id="index"></p>
+        <p ><h3>array splice</h3></p>
+        <p id="test8"></p>
+        <p id="splice"></p>
+        <p><h3>array join</h3></p>
+        <p id="test9"></p>
+        <h3>array sum</h3>
+        <p id="test11"></p>
+        <script>
+            
+            document.getElementById("test1").innerHTML = Math.max(10,20,100,60);
+            const t2="banana,apple";
+            document.getElementById("test2").innerHTML=t2.length;
+            "<br>"
+            const t3= ["banana", "Orange", "Apple"];
+            document.getElementById("test3").innerHTML = t3;
+            t3.pop();
+            document.getElementById("demo").innerHTML=t3;
+            "<br>"
+            const t4= ["banana", "Orange", "Apple", "Mango"];
+            document.getElementById("test4").innerHTML = t4;
+            t4.push("banana");
+            document.getElementById("dmow").innerHTML=t4;
+            "<br>"
+            const t5= ["banana", "Orange", "Apple"];
+            document.getElementById("test5").innerHTML = t5;
+            t5.unshift("stawberry");
+            document.getElementById("unshift").innerHTML=t5;
+            "<br>"
+            const t6= ["100","200","300"];
+            document.getElementById("test6").innerHTML = t6;
+            t6.shift();
+            document.getElementById("shift").innerHTML=t6;
+            "<br>"
+            const t7= "100,200,300,400,500";
+            let result=t7.indexOf("400");
+            document.getElementById("index").innerHTML= result;
+         "<br>"
+            const t8= ["100","200","300","400","500"];
+            document.getElementById("test8").innerHTML = t8;
+            t8.splice(2,0,"20","30");
+            document.getElementById("splice").innerHTML= t8;
+            "<br>"
+            const t9 =["100","200","300"];
+            let t10= t9.join("*");
+            document.getElementById("test9").innerHTML=t10;
+            "<br>"
+            const text=[11,10,63,54];
+            let t12= text[0]+text[1]+text[2]+text[3];
+            document.getElementById("test11").innerHTML=t12;
+        </script>
+    </body>
+</html>

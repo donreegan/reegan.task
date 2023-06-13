@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>animation</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            background-color: blue;
+            animation-name: r1;
+            position: relative;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        @keyframes r1 {
+            from{top:0px;}
+            to{
+                top:200px;background-color: deeppink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        WELCOME
+    </div>
+</body>
